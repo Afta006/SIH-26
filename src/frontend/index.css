@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+
+  --oe-bg-deep: #081521;
+  --oe-bg-panel: #0F2438;
+  --oe-bg-card: #122B42;
+  --oe-border: #1C3A52;
+
+  --oe-teal: #3FA9A0;
+  --oe-teal-soft: rgba(63, 169, 160, 0.14);
+
+  --oe-coral: #E8735C;
+
+  --oe-amber: #E8A33D;
+  --oe-amber-soft: rgba(232, 163, 61, 0.14);
+
+  --oe-text: #EAF4F4;
+  --oe-dim: #7C96A8;
+}
+
+
+/* LIGHT THEME */
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --oe-bg-deep: #F4F8FA;
+  --oe-bg-panel: #FFFFFF;
+  --oe-bg-card: #EAF2F5;
+  --oe-border: #C8D9E0;
+
+  --oe-teal: #238F87;
+  --oe-teal-soft: rgba(35, 143, 135, 0.12);
+
+  --oe-coral: #C95640;
+
+  --oe-amber: #B97816;
+  --oe-amber-soft: rgba(185, 120, 22, 0.12);
+
+  --oe-text: #163042;
+  --oe-dim: #5E7480;
+}
+
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html {
+  background: var(--oe-bg-deep);
+}
+
+body {
+  margin: 0;
+  background: var(--oe-bg-deep);
+  color: var(--oe-text);
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
